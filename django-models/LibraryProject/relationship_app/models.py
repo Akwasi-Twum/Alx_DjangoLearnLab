@@ -19,7 +19,7 @@ class Library(models.Model):
 
     def __str__(self):
         return self.name
-
+["class UserProfile(models.Model):", "Admin","Member"]
 class Librarian(models.Model):
     name = models.CharField(max_length=255)
     library = models.OneToOneField(Library, related_name='librarian', on_delete=models.CASCADE)
