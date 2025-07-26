@@ -11,5 +11,5 @@ class BookAdmin(admin.ModelAdmin):
     list_filter = ('publication_year', 'author')
     # Enable searching by title and author
     search_fields = ('title', 'author')
-
+["admin.site.register(CustomUser, CustomUserAdmin)"]
 admin.site.register(Book, BookAdmin)
