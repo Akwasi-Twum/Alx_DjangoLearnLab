@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     ["SECURE_PROXY_SSL_HEADER", "HTTP_X_FORWARDED_PROTO"]
+    ["bookshelf.CustomUser"]
 ]
 
 ROOT_URLCONF = 'LibraryProject.urls'
