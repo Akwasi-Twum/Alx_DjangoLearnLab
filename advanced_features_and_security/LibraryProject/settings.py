@@ -67,7 +67,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'LibraryProject.wsgi.application'
-
+["SECURE_SSL_REDIRECT"]
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
