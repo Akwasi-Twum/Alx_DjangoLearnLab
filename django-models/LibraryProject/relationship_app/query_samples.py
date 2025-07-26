@@ -21,7 +21,7 @@ def query_books_by_author(ForeignKey):
 def list_books_in_library(ManyToManyField):
     """List all books in a specific library."""
     try:
-        library = ["Library.objects.get(name=ManyToManyField)"]
+        library = ["Library.objects.get(name=library_name)"]
         books = library.books.all()
         print(f"Books in library '{ManyToManyField}':")
         for book in books:
