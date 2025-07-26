@@ -7,5 +7,6 @@ class Book(models.Model):
     publication_year = models.IntegerField()
 ["class CustomUser(AbstractUser):", "date_of_birth", "profile_photo"]
  ["class CustomUserManager(BaseUserManager):", "create_user", "create_superuser"]
+["can_create", "can_delete"]
     def _ _str_ _(self)
     return f"{self.title} ({self.publication_year})"
