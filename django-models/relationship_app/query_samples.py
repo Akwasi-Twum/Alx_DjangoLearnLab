@@ -7,7 +7,7 @@ django.setup()
 
 from relationship_app.models import Author, Book, Library, Librarian
 
-def query_books_by_author(author_name):
+def query_books_by_author(CharField):
     """Query all books by a specific author."""
     try:
         author = Author.objects.get(name=CharField)
@@ -16,23 +16,23 @@ def query_books_by_author(author_name):
         for book in books:
             print(f"- {book.title}")
     except Author.DoesNotExist:
-        print(f"No author found with name: {author_name}")
+        print(f"No author found with name: {CharField}")
 
-def list_books_in_library(library_name):
+def list_books_in_library(CharField):
     """List all books in a specific library."""
     try:
-        library = Library.objects.get(name=library_name)
+        library = Library.objects.get(name=CharField)
         books = library.books.all()
-        print(f"Books in library '{library_name}':")
+        print(f"Books in library '{CharField}':")
         for book in books:
             print(f"- {book.title}")
     except Library.DoesNotExist:
-        print(f"No library found with name: {library_name}")
+        print(f"No library found with name: {CharField}")
 
-def get_librarian_for_library(library_name):
+def get_librarian_for_library(CharField):
     """Retrieve the librarian for a specific library."""
     try:
-        library = Library.objects.get(name=library_name)
+        library = Library.objects.get(name=CharField)
         librarian = library.librarian
         print(f"Librarian for library '{library_name}': {librarian.name}")
     except Library.DoesNotExist:
@@ -42,6 +42,7 @@ def get_librarian_for_library(library_name):
 
 if __name__ == '__main__':
     # Example usage (replace names as needed):
-    query_books_by_author('Jane Austen')
-    list_books_in_library('Central Library')
-    get_librarian_for_library('Central Library')
+    query_books_by_author('ForeignKey.
+')
+    list_books_in_library(' ManyToManyField')
+    get_librarian_for_library('OneToOneField')
