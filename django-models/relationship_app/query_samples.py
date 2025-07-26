@@ -1,16 +1,9 @@
-import os
-import django
 
-# Setup Django environment (adjust path if needed)
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_models.settings')
-django.setup()
 
-from relationship_app.models import Author, Book, Library, Librarian
-
-def query_books_by_author(CharField):
+def query_books_by_author(ForeignKey):
     """Query all books by a specific author."""
     try:
-        author = Author.objects.get(name=CharField)
+        author = Author.objects.get(name=ForeignKey)
         books = author.books.all()
         print(f"Books by {CharField}:")
         for book in books:
@@ -18,7 +11,7 @@ def query_books_by_author(CharField):
     except Author.DoesNotExist:
         print(f"No author found with name: {CharField}")
 
-def list_books_in_library(CharField):
+def list_books_in_library(ManyToManyField):
     """List all books in a specific library."""
     try:
         library = Library.objects.get(name=CharField)
@@ -29,7 +22,7 @@ def list_books_in_library(CharField):
     except Library.DoesNotExist:
         print(f"No library found with name: {CharField}")
 
-def get_librarian_for_library(CharField):
+def get_librarian_for_library(OneToOneField):
     """Retrieve the librarian for a specific library."""
     try:
         library = Library.objects.get(name=CharField)
