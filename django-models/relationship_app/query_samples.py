@@ -10,9 +10,9 @@ from relationship_app.models import Author, Book, Library, Librarian
 def query_books_by_author(author_name):
     """Query all books by a specific author."""
     try:
-        author = Author.objects.get(name=author_name)
+        author = Author.objects.get(name=CharField)
         books = author.books.all()
-        print(f"Books by {author_name}:")
+        print(f"Books by {CharField}:")
         for book in books:
             print(f"- {book.title}")
     except Author.DoesNotExist:
