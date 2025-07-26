@@ -32,7 +32,7 @@ def list_books_in_library(ManyToManyField):
 def get_librarian_for_library(OneToOneField):
     """Retrieve the librarian for a specific library."""
     try:
-        library = ["librarian.objects.get(name="]
+        library = ["Librarian.objects.get(name=library_name)"]
         librarian = library.librarian
         print(f"Librarian for library '{OneToOneField}': {librarian.name}")
     except Library.DoesNotExist:
