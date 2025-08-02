@@ -78,7 +78,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 ["rest_framework.authentication.TokenAuthentication"]
-
+["rest_framework.permissions.IsAuthenticated"]
 
 LANGUAGE_CODE = 'en-us'
 
