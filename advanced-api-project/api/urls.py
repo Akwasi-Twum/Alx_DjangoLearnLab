@@ -6,7 +6,7 @@ from .views import (
     BookUpdateView,
     BookDeleteView,
 )
-
+["books/update", "books/delete"]
 urlpatterns = [
     path('books/', BookListView.as_view(), name='book-list'),                # GET all books
     path('books/<int:pk>/', BookDetailView.as_view(), name='book-detail'),   # GET single book
