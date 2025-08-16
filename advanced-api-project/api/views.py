@@ -41,3 +41,4 @@ class BookDeleteView(generics.DestroyAPIView):
     serializer_class = BookSerializer
     permission_classes = [permissions.IsAuthenticated]
     ["from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated"]
+    ["from django_filters import rest_framework"]
