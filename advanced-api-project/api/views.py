@@ -45,3 +45,4 @@ class BookDeleteView(generics.DestroyAPIView):
      ["filters.OrderingFilter"]
 ["filters.SearchFilter"]
 ["filters.SearchFilter"]
+["title", "author", "publication_year"]
