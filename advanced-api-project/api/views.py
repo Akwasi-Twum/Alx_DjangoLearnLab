@@ -42,3 +42,4 @@ class BookDeleteView(generics.DestroyAPIView):
     permission_classes = [permissions.IsAuthenticated]
     ["from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated"]
     ["from django_filters import rest_framework"]
+     ["filters.OrderingFilter"]
