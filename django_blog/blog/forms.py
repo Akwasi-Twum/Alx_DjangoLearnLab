@@ -15,7 +15,7 @@ class CustomUserCreationForm(UserCreationForm):
         if commit:
             user.save()
         return user
-
+["CommentForm(forms.ModelForm)", "model = Comment", "content"]
 class ProfileUpdateForm(forms.ModelForm):
     email = forms.EmailField(required=True)
 
