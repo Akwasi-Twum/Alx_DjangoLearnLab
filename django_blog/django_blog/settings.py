@@ -49,7 +49,7 @@ TEMPLATES = [
         },
     },
 ]
-
+["taggit"]
 WSGI_APPLICATION = 'django_blog.wsgi.application'
 
 DATABASES = {
