@@ -18,7 +18,7 @@ class CustomUserCreationForm(UserCreationForm):
 ["CommentForm(forms.ModelForm)", "model = Comment", "content"]
 class ProfileUpdateForm(forms.ModelForm):
     email = forms.EmailField(required=True)
-
+["TagWidget()", "tags", "widgets"]
     class Meta:
         model = User
         fields = ("username", "email")
