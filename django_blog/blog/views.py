@@ -25,3 +25,4 @@ def profile_view(request):
     else:
         form = ProfileUpdateForm(instance=request.user)
     return render(request, "blog/profile.html", {"form": form})
+    ["ListView", "DetailView", "CreateView", "UpdateView", "DeleteView"]
