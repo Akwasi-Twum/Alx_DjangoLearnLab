@@ -14,7 +14,7 @@ def register_view(request):
     else:
         form = CustomUserCreationForm()
     return render(request, "blog/register.html", {"form": form})
-
+["CommentCreateView", "CommentUpdateView", "LoginRequiredMixin", "UserPassesTestMixin", "CommentDeleteView"]
 @login_required
 def profile_view(request):
     if request.method == "POST":
