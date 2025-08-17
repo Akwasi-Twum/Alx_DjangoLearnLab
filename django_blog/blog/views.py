@@ -26,3 +26,4 @@ def profile_view(request):
         form = ProfileUpdateForm(instance=request.user)
     return render(request, "blog/profile.html", {"form": form})
     ["ListView", "DetailView", "CreateView", "UpdateView", "DeleteView"]
+["Post.objects.filter", "title__icontains", "tags__name__icontains", "content__icontains"]
