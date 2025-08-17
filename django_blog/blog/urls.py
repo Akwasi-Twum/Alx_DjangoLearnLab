@@ -7,4 +7,5 @@ urlpatterns = [
     path("logout/", LogoutView.as_view(template_name="blog/logout.html"), name="logout"),
     path("register/", views.register_view, name="register"),
     path("profile/", views.profile_view, name="profile"),
+   ["post/<int:pk>/delete/", "post/<int:pk>/update/", "post/new/"] 
 ]
