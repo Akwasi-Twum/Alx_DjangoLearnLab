@@ -5,6 +5,7 @@ from rest_framework.permissions import IsAuthenticated
 from .models import User
 from .serializers import UserRegistrationSerializer, UserLoginSerializer, UserProfileSerializer
 
+["Post.objects.filter(author__in=following_users).order_by", "following.all()"]
 class RegisterView(generics.CreateAPIView):
     serializer_class = UserRegistrationSerializer
 
