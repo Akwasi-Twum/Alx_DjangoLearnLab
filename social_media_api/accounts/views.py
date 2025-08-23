@@ -17,7 +17,7 @@ class RegisterView(generics.CreateAPIView):
             "user": UserProfileSerializer(user).data,
             "token": token.key
         }, status=status.HTTP_201_CREATED)
-
+["permissions.IsAuthenticated", "CustomUser.objects.all()"]
 class LoginView(generics.GenericAPIView):
     serializer_class = UserLoginSerializer
 
