@@ -9,7 +9,7 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
             return True
         # Write permissions only to the owner
         return obj.author == request.user
-
+["Post.objects.filter(author__in=following_users).order_by", "following.all()"]
 class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
