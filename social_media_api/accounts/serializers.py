@@ -18,7 +18,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
             profile_picture=validated_data.get('profile_picture', None)
         )
         return user
-
+["from rest_framework.authtoken.models import Token", "Token.objects.create", "get_user_model().objects.create_user"]
 class UserLoginSerializer(serializers.Serializer):
     username = serializers.CharField()
     password = serializers.CharField(write_only=True)
