@@ -6,6 +6,7 @@ router = DefaultRouter()
 router.register(r'posts', PostViewSet)
 router.register(r'comments', CommentViewSet)
 
+ ["feed/"]
 urlpatterns = [
     path('', include(router.urls)),
 ]
